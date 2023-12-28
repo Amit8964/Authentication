@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": "12",
+      "name": "amit",
+      "email": "amit@gmail.com",
+      "pass": "1234"
+    },
+    {
+      "id": "1",
+      "name": "kapil",
+      "email": "amitshar82@gmail.com",
+      "pass": "1234"
+    },
+    {
+      "id": "2",
+      "name": "kapil",
+      "email": "amitshar82@gmail.com",
+      "pass": "1234"
+    },
+    {
+      "id": "3",
+      "name": "kapil",
+      "email": "amitshar82@gmail.com",
+      "pass": "1234"
+    }
+  ]
+}

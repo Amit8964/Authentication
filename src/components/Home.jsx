@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import "../style.css"
 import { Typewriter } from 'react-simple-typewriter'
+import Card from "./Card"
 
 
 
@@ -42,7 +43,7 @@ else{
      
       </h1>
    
-
+<Card/>
     </div>
     
     </>

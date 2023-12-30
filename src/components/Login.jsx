@@ -4,6 +4,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react'
 import { Link, useNavigate } from "react-router-dom"
 import axios from "axios"
 import { motion } from "framer-motion"
+import bcrypt from "bcryptjs-react"
 
 
 
@@ -56,11 +57,13 @@ try{
         if(data.data.length>=1){
 let dt = data.data[0];
 
+let match = bcrypt.compare(login.pass,dt.pass)
+console.log(match)
 
-            if(dt.email===login.email && dt.pass === login.pass){
+
+            if(dt.email===login.email && match){
 
 window.sessionStorage.setItem("name", dt.name);
-alert("login sucessfully")
 navigate("Header/Home")
                
             }
